@@ -1,0 +1,1 @@
+# This is intentionally Empty.  Using Wildcards on file exclusions is enough for an Exchange server.  Directory Exclusions are extremely bad for security.

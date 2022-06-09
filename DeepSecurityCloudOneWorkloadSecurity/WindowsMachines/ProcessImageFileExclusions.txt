@@ -1,0 +1,43 @@
+#All of these process exclusions are for default locations.  You will need to check your environemnt to donfirm these locations.  Wildcards are not supported for process exclsions
+#DFS-R Service.  Needed for Domain Controllers and any other servers such as file servers using DFS-R.
+C:\Windows\System32\dfsrs.exe
+#Veeam Process exclusions - Covers all types of Veeam Server
+C:\Program Files\Veeam\Backup and Replication\Backup\Veeam.Backup.Service.exe
+C:\Program Files\Veeam\Backup and Replication\Backup\Veeam.Backup.BrokerService.exe
+C:\Program Files (x86)\Veeam\Backup Transport\VeeamTransportSvc.exe
+C:\Program Files\Veeam\Veeam Distribution Service\Veeam.Backup.Agent.ConfigurationService.exe
+C:\Program Files\Veeam\Backup and Replication\Backup Catalog\Veeam.Backup.CatalogDataService.exe
+C:\Windows\Veeam\Backup and Replication\VeeamDeploymentSvc.exe
+C:\Program Files\Common Files\Veeam\Backup and Replication\Mount Service\Veeam.Backup.MountService.exe
+C:\Program Files (x86)\Veeam\vPowerNFS\VeeamNFSSvc.exe
+C:\Program Files\Microsoft SQL Server\MSSQL11.VEEAMSQL2012\MSSQL\Binn\sqlservr.exe
+C:\Program Files\Microsoft SQL Server\90\Shared\sqlwriter.exe
+C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe
+C:\Program Files\Veeam\Backup and Replication\Backup\VSS\sql\VeeamAgent.exe
+C:\Program Files\Veeam\Backup and Replication\Backup Catalog\assemblies80\VeeamAgent.exe
+C:\Program Files\Veeam\Backup and Replication\Backup Catalog\assemblies70\VeeamAgent.exe
+C:\Program Files\Veeam\Backup and Replication\Backup Catalog\assemblies90\VeeamAgent.exe
+C:\Program Files\Veeam\Backup and Replication\Backup\WinAgent\VeeamAgent.exe
+C:\Program Files\Veeam\Backup and Replication\Backup Catalog\WinAgent\VeeamAgent.exe
+C:\Program Files\Veeam\Backup and Replication\Backup Catalog\assemblies65\VeeamAgent.exe
+#Veeam Guest Exclusions
+c:\windows\veeamvsssupport\veeamguesthelper.exe
+c:\windows\veeamvsssupport\veeamguestindexer.exe
+#VMware VCenter Server on Windows
+C:\Program Files\VMware\vCenter Server\python\PythonService.exe
+C:\Program Files\VMware\vCenter Server\vmafdd\vmafdd.exe
+C:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe
+C:\Program Files\VMware\vCenter Server\vmon\vmon.exe
+C:\Program Files\VMware\vCenter Server\vmdird\vmdird.exe
+C:\ProgramData\VMware\vCenterServer\runtime\vmware-psc-client\bin\wrapper\wrapper.exe
+#Windows Defender ATP Exclsions
+C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe
+C:\Program Files\Windows Defender\MsMpEng.exe
+C:\Program Files\Windows Defender\MpCmdRun.exe
+C:\Program Files\Windows Defender\NisSrv.exe
+#Microsoft SQL Server Exclusions - See https://support.microsoft.com/en-us/topic/how-to-choose-antivirus-software-to-run-on-computers-that-are-running-sql-server-feda079b-3e24-186b-945a-3051f6f3a95b
+

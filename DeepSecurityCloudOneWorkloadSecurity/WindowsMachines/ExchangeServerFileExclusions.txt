@@ -1,0 +1,24 @@
+#Windows Update Exclusions
+${windir}\SoftwareDistribution\DataStore\DataStore.edb
+${windir}\SoftwareDistribution\DataStore\Logs\Edb*.jrs
+${windir}\SoftwareDistribution\DataStore\Logs\Edb.chk
+${windir}\SoftwareDistribution\DataStore\Logs\Tmp.edb
+#Windows Security DB Exclusions
+${windir}\security\database\*.edb
+${windir}\security\database\*.sdb
+${windir}\security\database\*.log
+${windir}\security\database\*.chk
+${windir}\security\database\*.jrs
+#Group Policy Exclusions
+${SystemRoot}\System32\GroupPolicy\Machine\Registry.pol
+${SystemRoot}\System32\GroupPolicy\User\Registry.pol
+#Local Policy Exclusions
+${allusersprofile}\NTUser.pol
+${SystemRoot}\System32\GroupPolicy\Machine\Registry.pol
+${SystemRoot}\System32\GroupPolicy\User\Registry.pol
+#Default Exchange Location Exclusions
+${ExchangeInstallPath}ClientAccess\OAB\Temp
+${ExchangeInstallPath}ClientAccess\OAB\*\*.lzx
+${ExchangeInstallPath}ClientAccess\OAB\*\*.flt
+${ExchangeInstallPath}ClientAccess\OAB\*\*.xml
+#Note that Database, Transaction log and .chk files need to be excluded however these files should not be at default locations
